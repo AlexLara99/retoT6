@@ -20,9 +20,19 @@
   }
 
   header, footer, article, aside {
-    padding: 1em;
+    padding: 0.5em;
   }
   header, footer {
     background-color: #269EB2;
     height: 20vh;
   }
+table tr td {
+  background-color: black;
+  color:white;
+}
+
+table{
+  float:right;
+  width: 30%;
+  padding:2%;
+}
