@@ -8,70 +8,81 @@
 
 </head>
 <body>
- <header></header>
+ <header>
+ 	
+ 	<img src="imagenes/proxmox-logo.png" >
+ </header>
   <div id="main">
     <article>
-    	
+    	<div id="proxmox">
+    	<h1>¿Que es proxmox?</h1>
+
     	<p>Proxmox Virtual Environment es una solución completa de virtualización, que funciona sobre Debian GNU/Linux, permitiendo la creación y gestión de máquinas virtuales OpenVZ y KVM.</p>
 
 		<p>Proxmox no crea ningún sistema de virtualización (o paravirtualización) nuevo, sino que usa dos ya existentes (KVM y OpenVZ), y ofrece una interfaz común de gestión, que simplifica el trabajo y hace que no sea necesario conocer el interior de estos sistemas para poder trabajar con máquinas virtuales.</p>
 
 		<p>Está basado en Software Libre, es decir, que podemos ver y hacer lo que queramos con el código fuente. Proxmox es uno de los productos más completos para virtualización en entornos de servidor, capaz de hacerle sombra a opciones de pago como VMware.</p>
-
+		</div>
+		<div id="indice">
+			<h3>Indice</h3>
+			<ul>
+				<li><a href="#proxmox">¿Que es proxmox?</a></li>
+				<li><a href="#instalar">¿Como instalarlo?</a></li>
+				<li><a href="">¿Como configurar el servidor?</a></li>
+				<li><a href="">Posibles fallos</a></li>
+			</ul>	
+		</div>
 <table>
 	<tr>
 		<td>
-				
-    	<p>Proxmox Virtual Environment es una solución completa de virtualización, que funciona sobre Debian GNU/Linux, permitiendo la creación y gestión de máquinas virtuales OpenVZ y KVM.</p>
-
-		<p>Proxmox no crea ningún sistema de virtualización (o paravirtualización) nuevo, sino que usa dos ya existentes (KVM y OpenVZ), y ofrece una interfaz común de gestión, que simplifica el trabajo y hace que no sea necesario conocer el interior de estos sistemas para poder trabajar con máquinas virtuales.</p>
-
-		<p>Está basado en Software Libre, es decir, que podemos ver y hacer lo que queramos con el código fuente. Proxmox es uno de los productos más completos para virtualización en entornos de servidor, capaz de hacerle sombra a opciones de pago como VMware.</p>
+			<h2>Programas utilizados para la instalacion:</h2>
+				<ul>
+					<li>Proxmox VM</li>
+					<li>Etcher</li>
+					<li>Git</li>
+					<li>Xampp (con apache valdria)</li>
+					<li></li>
+				</ul>	
+    	
 		</td>
 	</tr>
 </table>
-		<p>Actualmente, Proxmox funciona sobre Debian GNU/Linux, por lo que deberemos disponer de este sistema operativo instalado en el servidor donde vayamos a montar Proxmox, o bien podemos usar la imagen de instalación que nos ofrecen, que incluye el sistema operativo.</p>
-			<p>Proxmox Virtual Environment es una solución completa de virtualización, que funciona sobre Debian GNU/Linux, permitiendo la creación y gestión de máquinas virtuales OpenVZ y KVM.</p>
+	<div id="instalar">	
+	<h1>¿Como instalarlo?</h1>
+
+    <p>Proxmox Virtual Environment es una solución completa de virtualización, que funciona sobre Debian GNU/Linux, permitiendo la creación y gestión de máquinas virtuales OpenVZ y KVM.</p>
 
 		<p>Proxmox no crea ningún sistema de virtualización (o paravirtualización) nuevo, sino que usa dos ya existentes (KVM y OpenVZ), y ofrece una interfaz común de gestión, que simplifica el trabajo y hace que no sea necesario conocer el interior de estos sistemas para poder trabajar con máquinas virtuales.</p>
 
 		<p>Está basado en Software Libre, es decir, que podemos ver y hacer lo que queramos con el código fuente. Proxmox es uno de los productos más completos para virtualización en entornos de servidor, capaz de hacerle sombra a opciones de pago como VMware.</p>
 
-		<p>Actualmente, Proxmox funciona sobre Debian GNU/Linux, por lo que deberemos disponer de este sistema operativo instalado en el servidor donde vayamos a montar Proxmox, o bien podemos usar la imagen de instalación que nos ofrecen, que incluye el sistema operativo.</p>
-			<p>Proxmox Virtual Environment es una solución completa de virtualización, que funciona sobre Debian GNU/Linux, permitiendo la creación y gestión de máquinas virtuales OpenVZ y KVM.</p>
+<p>Proxmox Virtual Environment es una solución completa de virtualización, que funciona sobre Debian GNU/Linux, permitiendo la creación y gestión de máquinas virtuales OpenVZ y KVM.</p>
 
 		<p>Proxmox no crea ningún sistema de virtualización (o paravirtualización) nuevo, sino que usa dos ya existentes (KVM y OpenVZ), y ofrece una interfaz común de gestión, que simplifica el trabajo y hace que no sea necesario conocer el interior de estos sistemas para poder trabajar con máquinas virtuales.</p>
 
 		<p>Está basado en Software Libre, es decir, que podemos ver y hacer lo que queramos con el código fuente. Proxmox es uno de los productos más completos para virtualización en entornos de servidor, capaz de hacerle sombra a opciones de pago como VMware.</p>
 
-		<p>Actualmente, Proxmox funciona sobre Debian GNU/Linux, por lo que deberemos disponer de este sistema operativo instalado en el servidor donde vayamos a montar Proxmox, o bien podemos usar la imagen de instalación que nos ofrecen, que incluye el sistema operativo.</p>
-			<p>Proxmox Virtual Environment es una solución completa de virtualización, que funciona sobre Debian GNU/Linux, permitiendo la creación y gestión de máquinas virtuales OpenVZ y KVM.</p>
 
-		<p>Proxmox no crea ningún sistema de virtualización (o paravirtualización) nuevo, sino que usa dos ya existentes (KVM y OpenVZ), y ofrece una interfaz común de gestión, que simplifica el trabajo y hace que no sea necesario conocer el interior de estos sistemas para poder trabajar con máquinas virtuales.</p>
+</div>
+	
+	<h1>¿Como configurar el servidor?</h1>
 
-		<p>Está basado en Software Libre, es decir, que podemos ver y hacer lo que queramos con el código fuente. Proxmox es uno de los productos más completos para virtualización en entornos de servidor, capaz de hacerle sombra a opciones de pago como VMware.</p>
+	<p>Una vez instalado proxmox si no tenemos la plantilla, la descargaremos.</p>
+	<img src="imagenes/plantilla1.png">
+	<p> Le damos click en "datacenter", luego selecionamos local(pve) luego nos saldra un pequeño menu y ahi le damos click en content le damos a Templates</p>
+	<img src="imagenes/plantilla2.png">
+    
+    <p>Selecionamos el que queramos, y lo descargaremos</p>
+    <p>Una vez descargado la plantilla, crearemos nuestro contenedor le damos click en "create CT"</p>
 
-		<p>Actualmente, Proxmox funciona sobre Debian GNU/Linux, por lo que deberemos disponer de este sistema operativo instalado en el servidor donde vayamos a montar Proxmox, o bien podemos usar la imagen de instalación que nos ofrecen, que incluye el sistema operativo.</p>
-			<p>Proxmox Virtual Environment es una solución completa de virtualización, que funciona sobre Debian GNU/Linux, permitiendo la creación y gestión de máquinas virtuales OpenVZ y KVM.</p>
 
-		<p>Proxmox no crea ningún sistema de virtualización (o paravirtualización) nuevo, sino que usa dos ya existentes (KVM y OpenVZ), y ofrece una interfaz común de gestión, que simplifica el trabajo y hace que no sea necesario conocer el interior de estos sistemas para poder trabajar con máquinas virtuales.</p>
-
-		<p>Está basado en Software Libre, es decir, que podemos ver y hacer lo que queramos con el código fuente. Proxmox es uno de los productos más completos para virtualización en entornos de servidor, capaz de hacerle sombra a opciones de pago como VMware.</p>
-
-		<p>Actualmente, Proxmox funciona sobre Debian GNU/Linux, por lo que deberemos disponer de este sistema operativo instalado en el servidor donde vayamos a montar Proxmox, o bien podemos usar la imagen de instalación que nos ofrecen, que incluye el sistema operativo.</p>
-			<p>Proxmox Virtual Environment es una solución completa de virtualización, que funciona sobre Debian GNU/Linux, permitiendo la creación y gestión de máquinas virtuales OpenVZ y KVM.</p>
-
-		<p>Proxmox no crea ningún sistema de virtualización (o paravirtualización) nuevo, sino que usa dos ya existentes (KVM y OpenVZ), y ofrece una interfaz común de gestión, que simplifica el trabajo y hace que no sea necesario conocer el interior de estos sistemas para poder trabajar con máquinas virtuales.</p>
-
-		<p>Está basado en Software Libre, es decir, que podemos ver y hacer lo que queramos con el código fuente. Proxmox es uno de los productos más completos para virtualización en entornos de servidor, capaz de hacerle sombra a opciones de pago como VMware.</p>
-
-		<p>Actualmente, Proxmox funciona sobre Debian GNU/Linux, por lo que deberemos disponer de este sistema operativo instalado en el servidor donde vayamos a montar Proxmox, o bien podemos usar la imagen de instalación que nos ofrecen, que incluye el sistema operativo.</p>
 
 
     </article>
-
   </div>
-    <footer></footer>
+    <footer>
+    	
+    </footer>
 </body>
 </html>
 

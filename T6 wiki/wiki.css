@@ -36,3 +36,18 @@ table{
   width: 30%;
   padding:2%;
 }
+
+#indice{
+  width: 35%;
+  min-width: 200px;
+  background-color: #269EB2;
+  border-style: solid;
+  border-color: blue;
+  border-radius: 1em;
+  padding-left: 1em;
+
+}
+
+img{
+  width: 80%;
+}
