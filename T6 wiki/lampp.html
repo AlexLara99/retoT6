@@ -26,18 +26,38 @@
 				<div id="content">	
 					<img id="imgXampp" src="images/xampp.png" alt="">
 					<div class="segmento">
-						<h2 class="titulo">Lorem ipsum sed aliquam</h2>
+						<h2 class="titulo">Instalacion XAMPP</h2>
 						<div class="texto">		
-							<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.  Mauris quam enim, molestie in, rhoncus ut, lobortis a, est.<a href="images/proxmox.png" >Haz click aqui</a></p>		
+							<p>para instalar XAMPP en el servidor es idéntico a una instalación en un ordenador local. 
+
+							Para ejecutar el instalador deberemos insertar el siguiente comando en nuestro terminal 
+
+							“sudo chmod +x xampp-linux-x64-7.2.4-0-installer.run”
+						“./xampp-linux-x64-7.2.4-0-installer.run”<a href="images/proxmox.png" >Haz click aqui</a></p>		
 						</div>
 					</div>
 					<div class="segmento">
-						<h2 class="titulo">Lorem ipsum sed aliquam</h2>
+						<h2 class="titulo">Crear el enlace simbólico</h2>
 						<div class="texto">
-							<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.  Mauris quam enim, molestie in, rhoncus ut, lobortis a, est.</p>		
+							<p>Al ejecutar el instalador se nos abrirá un asistente de instalación y  desde este punto solo toca seguir los paso dando a “siguiente”
+
+							una vez instalado creamos una carpeta en local que la vinculamos con la del servidor con el siguiente comando 
+
+							“  ln -s /home/ik_2dw3/Escritorio/reto /opt/lampp/htdocs”
+							<a href="images/proxmox.png" >Haz click aqui</a></p>		
 						</div>
 					</div>
-					
+					<div class="segmento">
+						<h2 class="titulo">Iniciar XAMPP</h2>
+						<div class="texto">		
+							<p>Una vez creado el vínculo cada documento que guardemos en él se nos generara en la carpeta del XAMPP htdocs cuando queramos ejecutar XAMPP e inicializarlo  escribiremos  el siguiente comandos
+ 
+							”sudo ./opt/lampp/lampp start”
+							<a href="images/proxmox.png" >Haz click aqui</a></p>		
+						</div>
+					</div>
+
+
 						</div>
 
 			</div>

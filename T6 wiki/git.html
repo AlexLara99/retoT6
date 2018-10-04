@@ -26,25 +26,75 @@
 				<div id="content">	
 					<img id="imgGit" src="images/git.png" alt="">
 					<div class="segmento">
-						<h2 class="titulo">Lorem ipsum sed aliquam</h2>
+						<h2 class="titulo">Instalacion git</h2>
 						<div class="texto">		
-							<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.  Mauris quam enim, molestie in, rhoncus ut, lobortis a, est.<a href="images/proxmox.png" >Haz click aqui</a></p>		
+							<p>Para instalar git en el servidor necesitaremos ayuda de unos cuantos comandos
+								<ol>
+									<li>Para la instalación ejecutaremos<br/>
+									<b>“sudo apt-get install git”</b></li>
+									<li>
+										  
+    									Después tendremos que vincularlo con un correo ya creado en git <br/>
+    									<b>“git config --global user.email “T6euskera@retoProxmox.com”</b>
+									</li>
+									<li>
+										Iniciamos y creamos un repositorio en el directorio de trabajo<br/>
+    									<b>“git init”</b>
+									</li>
+									<li>
+										Hacemos la primera copia:<br/>
+											<b>“git add”</b> 
+									</li>
+									<li>
+										Y consolidamos:<br/>
+										<b>“git commit -m “consolidación de prueba”</b>
+									</li>
+									<li>
+										 Para ver el registro de consolidaciones:<br/>
+										<b>“git log”</b>
+									</li>
+									<li>
+										 Para ver el estado de git por si tenemos que hacer un “add” o una consolidación nueva:<br/>
+										<b>“git status”</b>
+									</li>
+								</ol>
+ 	 
+
+								<a href="images/proxmox.png" >Haz click aqui</a></p>		
 						</div>
 					</div>
 					<div class="segmento">
-						<h2 class="titulo">Lorem ipsum sed aliquam</h2>
+						<h2 class="titulo">Repositorio github</h2>
 						<div class="texto">
-							<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.  Mauris quam enim, molestie in, rhoncus ut, lobortis a, est.</p>		
+							 <p>Nos damos de alta en GitHub.com</p>
+
+							 <ol>
+							 	<li>
+							 		Vinculamos a nuestro git (local) el nuevo directorio de trabajo (repositorio de GitHub)<br/>
+							<b>“git remote add origin HTTPS:\\------------------”</b>
+							 	</li>
+							 	<li>
+							 		 Pasamos el proyecto de Git a GitHub: <br/>
+							<b>“git push -u origin master”</b>
+							 	</li>
+							 	<li>
+							 		Para recuperar un proyecto de GitHub:<br/>
+							<b>“git clone HTTPS:\\--------------------”</b>
+							 	</li>
+							 	<li>
+							 		Para pasar a GitHub modificaciones:<br/>
+							      <b>“git push”</b>
+							 	</li>
+							 	<li>
+							 		Para traerte las modificaciones de otros compañeros(una vez hecho el clone):<br/>
+							<b>“git pull”</b>
+		
+							 	</li>
+							 </ol>
+						<a href="images/proxmox.png" >Haz click aqui</a>
 						</div>
 					</div>
-					<div class="segmento">
-						<h2 class="titulo">Consecteteur hendrerit</h2>
-			
-						<div class="texto">
-							<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.  Mauris quam enim, molestie in, rhoncus ut, lobortis a, est.</p>
-							
-						</div>
-					</div>
+					
 						</div>
 
 			</div>
