@@ -22,6 +22,7 @@
 		</div>
 	</div>
 	<div id="page"><!--todo el contenido -->
+		<div class="box fade-in one">
 		<div id="page-top"><!--caja que funciona de margen -->
 				<div id="content">	
 				<img id="imgGit" src="images/server.png" alt="">
@@ -30,7 +31,7 @@
 						<div class="texto">		
 							<p>Una vez instalado proxmox si no tenemos la plantilla, la descargamos para tener ubuntu server.
     
-							Le damos click en "datacenter", luego selecionamos local (pve) luego nos saldra un pequeño menu y ahi le damos click en content le damos a Templates y ahi Selecionamos el que queramos, y lo descargamos.<a href="images/proxmox.png" >Haz click aqui</a></p>		
+							Le damos click en "datacenter", luego selecionamos local (pve) luego nos saldra un pequeño menu y ahi le damos click en content le damos a Templates y ahi Selecionamos el que queramos, y lo descargamos.<a href="javascript:window.open('images/proxmox.png','','toolbar=yes');void 0">Haz click aqui</a></p>		
 						</div>
 					</div>
 					<div class="segmento">
@@ -38,19 +39,26 @@
 						<div class="texto">
 							<p>Una vez descargado la plantilla, crearemos nuestro contenedor le damos click en "create CT" para crear nuestro contenedor.
 
-							Dentro de el nos aparecerá el para rellenar el codigo del nodo, hostname, y la contraseña que le quieras poner. Una vez que hayamos rellenado los campos mencionados le damos a siguiente. En templates seleccionamos el que tengamos descargado, en nuestro caso utilizaremos <b>ubuntu-16.04-standard_16.04-1_amd64.tar.gz</b>. La memoria y el cpu en un principio no los tocamos, pero si lo desea puede editar la configuración predeterminada.<a href="images/proxmox.png" >Haz click aqui</a></p>		
+							Dentro de el nos aparecerá el para rellenar el codigo del nodo, hostname, y la contraseña que le quieras poner. Una vez que hayamos rellenado los campos mencionados le damos a siguiente. En templates seleccionamos el que tengamos descargado, en nuestro caso utilizaremos <b>ubuntu-16.04-standard_16.04-1_amd64.tar.gz</b>. La memoria y el cpu en un principio no los tocamos, pero si lo desea puede editar la configuración predeterminada.<a href="javascript:window.open('images/proxmox.png','','toolbar=yes');void 0">Haz click aqui</a></p>		
 						</div>
 					</div>
 					<div class="segmento">
 						<h2 class="titulo">Configuracion IP</h2>
 			
 						<div class="texto">
-							<p>En network pondremos la configuracion IP que nos proporciones, la mascara de red y el gitway y  la DNS pusimos la del centro. Y para acabar, confirmamos la configuración dada anteriormente. Y listo, ya tenemos el servidor listo para su uso.<a href="images/proxmox.png" >Haz click aqui</a></p>
+							<p>En network pondremos la configuracion IP que nos proporciones, la mascara de red y el gitway y  la DNS pusimos la del centro. Y para acabar, confirmamos la configuración dada anteriormente. Y listo, ya tenemos el servidor listo para su uso.<a href="javascript:window.open('images/proxmox.png','','toolbar=yes');void 0">Haz click aqui</a></p>
+
+							<div class="error">
+								<h3><b>Advertencia:</b></h3><br/>
+								<p>
+									﻿Hay que tener en cuenta que el servidor debe estar encendido en todo momento si querermos que nuestra página web esté disponible siempre.
+								</p>
+							</div>
 							
 						</div>
 					</div>
 						</div>
-
+</div>
 			</div>
 	</div>
 </div>

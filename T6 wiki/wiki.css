@@ -1,4 +1,3 @@
-
 body {
 	margin: 0;
 	padding: 0;
@@ -128,11 +127,13 @@ a:hover {
 	font-weight: bold;
 	color: #FFFFFF;
 	border: none;
+	transition: 0.5s;
 }
 
 #menu a:hover {  /* Hace que la pestaña se marque en naranja cuando se pasa el raton por encima*/
 	background: #FF6C00;
 	text-decoration: none;
+	transition: 0.5s;
 }
 
 #menu .pestañaActual a {  /* Hace que la pestaña activa se marque en naranja */
@@ -224,4 +225,29 @@ video{
 	text-transform: uppercase;
 	text-align: center;
 	color: #FFFFFF;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.5s;
+  -moz-animation-duration:0.5s;
+  animation-duration:0.5s;
+}
+
+.fade-in.one {
+    -webkit-animation-duration:0.5s;
+  -moz-animation-duration:0.5s;
+  animation-duration:0.5s;
 }
